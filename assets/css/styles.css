@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background:url(../images/bg.png) ;
+    color: #FFF;
+}
+.btn{
+    margin: auto;
+    
+}
+.row{
+    margin-top: 30px;
+}
+.complement,h1{
+    padding-top: 20px;
+    color: #FFF;
+    text-transform: uppercase;
+}
+.container{
+    margin: auto;
+}
+.descritpion{
+    width: 200px;
+    font-size: 22px;
+    padding-left:20px;
+    display: block;
+}
+.img-thumbnail{
+    width: 600px;
+    margin: 40px 30px;
+}
+.logo{
+    font-family: 'Holtwood One SC', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Holtwood One SC', sans-serif;
+    color: #78290F;
+    text-shadow: 2px 2px #FF7D00;
+    font-size: 70px;
+    padding: 40px 0px;
+    text-align: center;
+    font-weight: inherit;
+    
+}
+.img-thumbnail a{
+    display:inline;
+}
+.descritpion{
+    color: black;
+    
+}
+.disc{
+    color: black;
+    font-weight: bold;
+}
+
+.description .titre{
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.description .artiste{
+    font-size: 22px;
+}
