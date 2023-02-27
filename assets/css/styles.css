@@ -8,7 +8,8 @@ body
     color: #FFF;
 }
 .btn{
-    margin: auto;
+    margin: 3px;
+    height: 40px;
     
 }
 .row{
@@ -64,4 +65,9 @@ body
 }
 .description .artiste{
     font-size: 22px;
+}
+.image_M{
+    width: 350px;
+    height: 350px;
+    margin-top: 10px;
 }

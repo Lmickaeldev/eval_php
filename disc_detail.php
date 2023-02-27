@@ -25,12 +25,14 @@ $requete->closeCursor();
   <div class="container site">
   <h1 class="logo">velvet Record</h1>
         <div class="row">
-            <h2 class=col-md-10>Détail des disques</h2>
-            <a href="index.php" class="btn btn-primary col-2">Retour</a>
-        <div class="col-md-6">
-        <img src="assets/images/<?=$detdisc->disc_picture?>" class="w-250">
+          <h2 class=col-md-10>Détail des disques</h2>
+          <a href="index.php" class="btn btn-primary col-md-2">Retour</a>
         </div>
-        <div class="description col-md-6">
+        <div class="row">
+              <div class="col-md-6">
+                <img src="assets/images/<?=$detdisc->disc_picture?>" class="w-250">
+              </div>
+              <div class="description col-md-6">
                 <p><span class="titre"><?=$detdisc->disc_title?></span></p><br>
                 <p><span class="artiste"><?=$detdisc->artist_name?></span></p><br>
                 <p><span >Label : </span><?=$detdisc->disc_label?></p>
@@ -39,7 +41,7 @@ $requete->closeCursor();
                 <p><span >Prix :</span><?=$detdisc->disc_price?>€</p> 
                 <a href="disc_modif.php?id=<?= $detdisc->disc_id ?>" class="btn btn-warning m-1">Modifier</a>
                 <a href="script_disc_delete.php?id=<?= $detdisc->disc_id?>" class="btn btn-danger m-1" onClick="return confirm('supprimer le disque ?')">Supprimer</a>
-                </div> 
+              </div> 
         </div>
         
   </div>

@@ -13,19 +13,22 @@ $requete->closeCursor();
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <title>ajouter disque</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="icon" type="image/png" href="./assets/images/icons8-90s-music-50.png" />
+    <link href='http://fonts.googleapis.com/css?family=Holtwood+One+SC' rel='stylesheet' type='text/css'>
+    <title>ajouter un disque</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container site">
+    <h1 class="logo">velvet Record</h1>
         <div class="row">
             <h1 class="col-md-10">Ajouter un disque</h1>
             <a href="index.php" class="btn btn-primary col-md-2">Retour</a>
         </div>
-        <form action="script_disc_new.php" method="post" enctype="multipart/form-data">            
+        <form action="script_disc_new.php" method="post" enctype="multipart/form-data">    
             <label for="title">Titre :</label><br>
             <input type="text" placeholder="Entrez un titre" class="col-12" name="title">
             <label for="artist" class="mt-1">Artiste :</label><br>
