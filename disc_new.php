@@ -1,4 +1,5 @@
  <?php
+ //connect bdd + requete
 include "db.php";
 $db = connexionBase();
 $requete = $db->query("SELECT * FROM `disc`  JOIN `artist`  ON disc.artist_id = artist.artist_id; ");
@@ -28,6 +29,7 @@ $requete->closeCursor();
             <h1 class="col-md-10">Ajouter un disque</h1>
             <a href="index.php" class="btn btn-primary col-md-2">Retour</a>
         </div>
+        <!-- form d'ajout  -->
         <form action="script_disc_new.php" method="post" enctype="multipart/form-data">    
             <label for="title">Titre :</label><br>
             <input type="text" placeholder="Entrez un titre" class="col-12" name="title">

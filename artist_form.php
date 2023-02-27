@@ -1,4 +1,5 @@
 <?php 
+    //connect base + recup + selection + requete id de l'artiste
     require "db.php";
     $db = connexionBase();
     $requete = $db->prepare("SELECT * FROM artist WHERE artist_id=?");
@@ -7,7 +8,7 @@
     $requete->closeCursor();
     
     
-    ?>
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -17,14 +18,14 @@
     <title>Ajout</title>
 </head>
 <body>
-
+    <!-- nuemro de l'id artiste dans le h1 -->
     <h1>Artiste n°<?= $resultat->artist_id; ?></h1>
 
     <a href="artists.php">Retour à la liste des artistes</a>
 
     <br>
     <br>
-
+    <!-- formulaire pour modifier -->
     <form action ="script_artist_modif.php" method="post">
 
         <input type="hidden" name="id" value="<?= $myArtist->artist_id ?>">
@@ -36,7 +37,7 @@
         <label for="url_for_label">Adresse site internet :</label><br>
         <input type="text" name="url" id="url_for_label" value="<?= $myArtist->artist_url ?>">
         <br><br>
-
+       
         <input type="reset" value="Annuler">
         <input type="submit" value="Modifier">
 

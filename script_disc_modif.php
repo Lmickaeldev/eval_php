@@ -38,7 +38,7 @@ require "db.php";
 $db = connexionBase();
 
 
-// Si erreur envoie vers form 
+// Si erreur envoie vers form de modif.php 
 if ($id == Null) {
     header("Location: disc.php");
 }
@@ -67,6 +67,6 @@ catch (Exception $e) {
 }
 
 
-//  OK => disc_detail.php 
+//  valider -> disc_detail.php 
 header("Location: disc_detail.php?id=".$id);
 exit;

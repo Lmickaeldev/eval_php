@@ -1,11 +1,12 @@
 <?php
+//coonect bdd + requete
 require "db.php";
 $db = connexionBase();
 $requete = $db->prepare("SELECT * FROM disc JOIN artist ON disc.artist_id = artist.artist_id WHERE disc_id=?");
 $requete ->execute(array($_GET["id"]));
 $detdisc = $requete ->fetch(PDO::FETCH_OBJ);
 $requete->closeCursor();
-// var_dump($detdisc);
+
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -27,7 +28,8 @@ $requete->closeCursor();
             <a href="disc_detail.php?id=<?=$detdisc->disc_id?>" class="btn btn-primary col-2">Retour</a>
         </div>
 
-        
+        <!-- utilisation des id recuperer mis dans de l'html -->
+        <!-- form pour modifier les label qui sont deja remplis via les id -->
         <form action="script_disc_modif.php" method="post" enctype="multipart/form-data">            
             <div class="row">
             <div class="col-md-6">
